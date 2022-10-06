@@ -1,0 +1,8 @@
+hadoop fs -mkdir /Hadoop_Project
+hadoop fs -copyFromLocal /home/edureka/Desktop/World_Cup_Squads.txt /Hadoop_Project
+hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordcount /Hadoop_Project/World_Cup_Squads.txt /Hadoop_Project/Word_Count
+hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordmean /Hadoop_Project/World_Cup_Squads.txt /Hadoop_Project/Mean
+hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordmedian /Hadoop_Project/World_Cup_Squads.txt /Hadoop_Project/Median
+hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordstandarddeviation /Hadoop_Project/World_Cup_Squads.txt /Hadoop_Project/Standard_Deviation
+ 
+
